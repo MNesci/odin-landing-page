@@ -1,6 +1,5 @@
 body {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
 }
 
 header {
@@ -15,6 +14,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+nav img {
+    max-height: 150px;
+    width: auto;
 }
 
 nav ul {
@@ -41,11 +45,10 @@ li {
 }
 
 .media-text {
-    max-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-basis: 50%;
 }
 
 .primary {
@@ -63,8 +66,99 @@ button {
     background-color: #3882F6;
     font-size: 18px;
     color: #E5E7EB;
+    border-radius: 15%;
 }
 
-img {
+.media-text button {
+    border: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    padding: 24px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 225px 50px 225px;
+}
+
+.card {
+    padding: 0 24px 0 24px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 15%;
+    
+}
+
+.media img {
     background-color: gray;
+    max-width: 50%;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 225px 50px 225px;
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    align-self: center;
+}
+
+.quote-sig {
+    font-weight: 700;
+    align-self: flex-end;
+    font-size: 18px;
+    color: #1F2937;
+}
+
+.banner {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 150px 50px 150px;
+    padding: 24px 0 24px 0;
+}
+
+.banner-header {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.banner-info {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.banner button {
+    border-style: solid;
+}
+
+footer {
+    background-color: #1F2937;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    color: #E5E7EB;
 }
